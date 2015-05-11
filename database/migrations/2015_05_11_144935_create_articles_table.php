@@ -17,7 +17,7 @@ class CreateArticlesTable extends Migration {
 			$table->increments('id');
             $table->string('name');
             $table->string('details');
-            $table->double('price');
+            $table->decimal('price');
             $table->string('brand');
             $table->string('model');
 			$table->timestamps();

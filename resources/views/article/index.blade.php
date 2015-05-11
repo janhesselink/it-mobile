@@ -8,7 +8,7 @@
             <h2>
                 <a href="{{ action('ArticleController@show', [$article->id]) }}">{{ $article->name }}</a>
             </h2>
-            <h4>{{ $article->price }}</h4>
+            <h4>€{{ $article->price }}</h4>
         </div>
     @endforeach
 @endsection
