@@ -1,2 +1,0 @@
-## It-Mobile
-School project
