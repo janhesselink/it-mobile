@@ -1,7 +1,6 @@
 <?php
 
 use App\Article;
-use App\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
