@@ -40,8 +40,11 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="title">iT-Mobile</div>
+				<div class="quote">
+                    GitHub:
+                    <a href="https://github.com/elleuh/it-mobile">https://github.com/elleuh/it-mobile</a>
+                </div>
 			</div>
 		</div>
 	</body>
