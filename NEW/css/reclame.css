@@ -1,0 +1,9 @@
+.blauw {
+    background-color: #0094ff;
+}
+
+#blokje {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #808080;
+}
