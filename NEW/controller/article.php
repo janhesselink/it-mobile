@@ -17,12 +17,37 @@ class Article
 function getAllArticles() {
     try
     {
-        global $dbh;
+        /*global $dbh;
         $stmt = $dbh->prepare("SELECT * FROM Article");
         $stmt->execute();
         $result = $stmt->fetch();
-
+        */
         $articles = array();
+
+        $result = array(
+            array(
+            'Id' => 0,
+            'Name' => 'Test',
+            'Price' => 12.50,
+            'Brand' => 'HTC',
+            'Model' => 'One m8'
+            ),
+            array(
+                'Id' => 1,
+                'Name' => 'Test',
+                'Price' => 10,
+                'Brand' => 'HTC',
+                'Model' => 'One m7'
+            ),
+            array(
+                'Id' => 2,
+                'Name' => 'Test',
+                'Price' => 100,
+                'Brand' => 'HTC',
+                'Model' => 'One m9'
+            )
+        );
+
         foreach($result as $article)
         {
             $articles[] = arrayToArticle($article);
@@ -38,14 +63,14 @@ function getAllArticles() {
 
 /* CONVERT ARRAY FROM DATABASE TO ARTICLE OBJECT */
 function arrayToArticle($arr) {
-    $article = new Article(
-        [
-            $id->$arr['Id'],
-            $name->$arr['Name'],
-            $price->$arr['Price'],
-            $brand->$arr['Brand'],
-            $model->$arr['Model']
-        ]);
+    $article = new Article(array
+    (
+            'id' => $arr['Id'],
+            'name' => $arr['Name'],
+            'price' => $arr['Price'],
+            'brand' => $arr['Brand'],
+            'model' => $arr['Model']
+    ));
     return $article;
 }
 

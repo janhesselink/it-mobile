@@ -8,7 +8,13 @@ $articles = getAllArticles();
 
 
 <?php
+
 foreach($articles as $article) {
-    echo $article->name;
+    echo 'Id: '.$article->id.'<br>';
+    echo 'Naam: '.$article->name.'<br>';
+    echo 'Prijs: '.$article->price.'<br>';
+    echo 'Merk: '.$article->brand.'<br>';
+    echo 'Model: '.$article->model.'<br>';
+    echo '<br>';
 }
 ?>
